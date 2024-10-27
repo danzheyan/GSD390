@@ -8,13 +8,12 @@ public class ball_mover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var ballMover = new ball_mover();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.zero;
+        transform.position = Vector3.up;
     }
 }
