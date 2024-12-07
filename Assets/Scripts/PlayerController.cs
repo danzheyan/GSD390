@@ -58,13 +58,12 @@ public class PlayerController : MonoBehaviour
 
         IEnumerator ShowLoseAndRestart()
         {
-            // Activate the lose text
             lose.SetActive(true);
 
-            // Wait for 4 seconds
+            // wait for 4 seconds
             yield return new WaitForSeconds(4f);
 
-            // Reload the scene (current scene index)
+            // reload the scene 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -91,13 +90,12 @@ public class PlayerController : MonoBehaviour
 
         IEnumerator ShowWinAndRestart()
         {
-            // Activate the lose text
             win.SetActive(true);
 
-            // Wait for 4 seconds
+            // wait for 4 seconds
             yield return new WaitForSeconds(4f);
 
-            // Reload the scene (current scene index)
+            // load menu
             SceneManager.LoadScene(0);
         }
     }
